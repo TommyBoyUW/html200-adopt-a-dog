@@ -1,0 +1,255 @@
+
+  * { box-sizing: border-box; }
+  * {font-family: Helvetica, sans-serif; }
+
+   header {
+    width: 100%;
+    padding: 2% 10% 2% 9%;
+    color: white;
+    font-weight:900;
+    background: #2e5984;
+    background-image: url(../images/adoptadog-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 15% 60%;
+    }
+
+
+        .aboutheader {
+          width: 100%;
+          padding:0% 0% 0% 89%;
+          background-image: url(../images/cart-icon.svg);
+          background-repeat: no-repeat;
+          background-size: 3%;
+          background-position: 87% 10%;
+         }
+
+         h2 {
+           font-size: 1.2em;
+           padding: 15% 0 0% 0%;
+           color: #4CAF50;
+              font-style:oblique;
+              font-weight:200;}
+
+
+     .checkout {
+      width: 20%;
+      float: right;
+       background-color: #4CAF50;
+       border: none;
+       color: white;
+       text-align: center;
+       text-decoration: none;
+       margin: 0% 0% 0% 80%;
+       padding: 1%;
+       cursor: pointer;}
+
+       .checkoutpage {
+         padding: 1% 15%;
+       }
+
+
+
+
+
+
+        .bannernav{
+          width: 100%;
+          background: #E8E8E8;
+          padding: 2.5% 0% 2.5% 10%;
+          margin: 0% 0 2% 0;
+          text-align:left;
+        }
+
+        .navclass{
+        color: #2e5984;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: .3rem;
+        text-decoration: none;
+        }
+
+        label {
+            font-size: 1.5rem;
+            color: navy;
+            font-weight: 600;
+          }
+
+          .title {
+              font-size: 1.8rem;
+              color: navy;
+            }
+
+            .profile {
+              margin: 2.5% 0 2.5% 2.5%;
+              font-size: .7rem;
+              border: 1px solid lightgrey;
+              width: 16em;
+              text-align: left;
+                        }
+
+                        .profilephoto {
+                          width:100%;
+                           }
+
+                      h4 {
+                      font-size: 1.5em;
+                      font-style: oblique;
+                    }
+
+                    h3 {
+                      font-size: 2em;
+                      font-style: oblique;
+                      padding: 0 10%;
+                      color: navy;
+                    }
+
+
+                    .checkoutphoto {
+                    height:5%;
+                    }
+
+                    .perfect3{
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                    }
+
+                                    .checkoutportfolio{
+
+                                      display: flex;
+                                      flex-direction: row;
+                                      flex-wrap: wrap;
+                                    }
+
+                                    .profilecheckout {
+                                      padding: 0 2.5%;
+                                    }
+
+
+                                    .submit {
+                                     width: 30%;
+                                      background-color: #4CAF50;
+                                      border: none;
+                                      color: white;
+                                      font-size: 1rem;
+                                      font-weight: bold;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      padding: 2% 5%;
+                                      cursor: pointer;}
+
+
+
+
+            .portfolio{
+              padding:0 10%;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-around;
+            }
+
+            .introverb, .blogverb {
+              font-size: .75em;
+            }
+
+
+            .adopt {
+              background-color: #4CAF50;
+              width: 90%;
+              padding: 5%;
+              border: none;
+              font-weight: bold;
+              color: white;
+              text-align: center;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            .profile :not(.profilephoto){
+               margin: 5%;
+             }
+
+
+            .more {
+              background-color: lightgrey;
+              width: 30%;
+              margin: 0% 35% 2.5% 35%;
+              padding: 2% 5%;
+              border: none;
+              font-weight: bold;
+              color: black;
+              text-align: center;
+              font-size: 1rem;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            .intropic{
+              max-width:35%;
+              height:20%;
+            }
+
+            .blogpic{
+              max-width:30%;
+              height:25%;
+              margin: 2% 5%;
+}
+            .intro {
+              width: 60%;
+            }
+
+              .intropages {
+                width: 50%;
+
+            }
+            .intropage{
+            margin: 5% 10%;
+            font-family: Arial, sans-serif;
+              font-size: 1.25rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          }
+
+          .blogpage{
+          margin: 2.5% 5%;
+          font-family: Arial, sans-serif;
+            font-size: 1.1em;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .statess {
+          margin: 1% 1% 1% 1%;
+        }
+
+        input {
+          padding:2.5% 25%;
+        }
+
+        .some {padding: 5% 0%;}
+
+        footer{
+        clear: both;
+        background-color: #404040;
+        background-image: url(../images/adoptadog-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: 50% 15%;
+        color: white;
+        font-size: .7rem;
+        width: 100%;
+        padding: 10% 35% 5% 35%;
+        text-align:center;
+        }
+
+      .footernav a{
+      color: white;
+      padding: 2.5%;
+      font-size: .9em;
+      text-decoration: none;
+      }

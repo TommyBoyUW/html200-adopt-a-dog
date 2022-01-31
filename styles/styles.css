@@ -48,11 +48,6 @@
          padding: 1% 15%;
        }
 
-
-
-
-
-
         .bannernav{
           width: 100%;
           background: #E8E8E8;
@@ -88,13 +83,13 @@
               text-align: left;
                         }
 
-                        .profilephoto {
-                          width:100%;
-                           }
+              .profilephoto {
+              width:100%;
+                 }
 
-                      h4 {
-                      font-size: 1.5em;
-                      font-style: oblique;
+                h4 {
+                  font-size: 1.5em;
+                  font-style: oblique;
                     }
 
                     h3 {
@@ -115,31 +110,27 @@
                       flex-wrap: wrap;
                     }
 
-                                    .checkoutportfolio{
+                      .checkoutportfolio{
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                      }
 
-                                      display: flex;
-                                      flex-direction: row;
-                                      flex-wrap: wrap;
-                                    }
+                    .profilecheckout {
+                    padding: 0 2.5%;
+                    }
 
-                                    .profilecheckout {
-                                      padding: 0 2.5%;
-                                    }
-
-
-                                    .submit {
-                                     width: 30%;
-                                      background-color: #4CAF50;
-                                      border: none;
-                                      color: white;
-                                      font-size: 1rem;
-                                      font-weight: bold;
-                                      text-align: center;
-                                      text-decoration: none;
-                                      padding: 2% 5%;
-                                      cursor: pointer;}
-
-
+                    .submit {
+                     width: 30%;
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 2% 5%;
+                    cursor: pointer;}
 
 
             .portfolio{
@@ -195,7 +186,8 @@
               max-width:30%;
               height:25%;
               margin: 2% 5%;
-}
+            }
+
             .intro {
               width: 60%;
             }

@@ -84,7 +84,7 @@
                         }
 
               .profilephoto {
-              width:100%;
+              max-width:100%;
                  }
 
                 h4 {

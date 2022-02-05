@@ -85,6 +85,7 @@
 
               .profilephoto {
               max-width:100%;
+              cursor: pointer;
                  }
 
                 h4 {

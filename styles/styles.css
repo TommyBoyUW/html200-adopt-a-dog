@@ -42,7 +42,7 @@
 
 
 
-                                  
+
                                   .indexleft {
                                     width: 70%;
                                     float: left;
@@ -231,15 +231,21 @@
 
         @media screen and (max-width: 576px) {
 
+          #headerlayer {
+             background-image: url(../images/header-image.jpg);
+          }
+
           .header {
             max-width: 100%;
             height: 15em;
             padding: 1% 10% 2% 9%;
             color: white;
-           background-image: url(../images/header-image.jpg);
            background-repeat: no-repeat;
            background-size: cover;
+           background-image: linear-gradient(to right, blue, green);
            }
+
+
 
            .headers {
             width: 50%;
@@ -247,10 +253,8 @@
             padding: 0% 0% 0% 0%;
             color: green;
             font-weight:900;
-            background-repeat: no-repeat;
-            background-size: 20%;
-            background-position: 10% 10%;
-            background-size: cover;
+            font-size: .6em;
+
             }
 
                 .aboutheader {
@@ -289,21 +293,19 @@
 
 
             .blogmore {
-              background-color: lightblue;
+              background-color: #4CAF50;
               width: 70%;
               margin: 10% 15% 10% 15%;
               padding: 2% 5%;
               border: none;
               font-weight: bold;
-              color: black;
+              color: white;
               text-align: center;
-              font-size: 1rem;
+              font-size: 2rem;
               text-decoration: none;
               cursor: pointer;
               visibility: visible;
-              font-size: 2em;
-              color: black;
-            }
+                }
 
 
 
@@ -312,6 +314,7 @@
           width: 100%;
           height: 8em;
           object-fit: cover;
+          background-position: center center;
         }
 
 
@@ -324,20 +327,24 @@
 
         @media screen and (min-width: 577px) and (max-width: 991px) {
 
+          #headerlayer {
+             background-image: url(../images/header-image.jpg);
+          }
+
           .header {
             max-width: 100%;
-            height: 20em;
+            height: 17em;
             padding: 1% 10% 2% 9%;
             color: white;
-           background-image: url(../images/header-image.jpg);
            background-repeat: no-repeat;
            background-size: cover;
+           background-image: linear-gradient(red, yellow, green);
            }
 
            .blogmore{
            visibility: hidden;
            display: none;
-         }
+            }
 
 
            .headers {
@@ -346,10 +353,7 @@
             padding: 0% 0% 0% 0%;
             color: green;
             font-weight:900;
-            background-repeat: no-repeat;
-            background-size: 20%;
-            background-position: 10% 10%;
-            background-size: cover;
+            font-size: 1em;
             }
 
                 .aboutheader {
@@ -390,14 +394,16 @@
           .indexintropic {
             clear: both;
             width: 100%;
-            height: 11em;
+            height: 16em;
             object-fit: cover;
+            background-position: center center;
           }
 
           .indexblogpic{
             width: 100%;
-            height: 5em;
+            height: 7em;
             object-fit: cover;
+            background-position: center center;
           }
 
 
@@ -412,27 +418,36 @@
 
         @media screen and (min-width: 992px) {
 
+          #headerlayer {
+             background-image: url(../images/header-image.jpg);
+          }
+
           .header {
             max-width: 100%;
-            height: 20em;
-            padding: 1% 10% 2% 9%;
-            color: white;
-           background-image: url(../images/header-image.jpg);
+            height: 22em;
+           padding: 01% 10% 0% 0%;
+           color: white;
            background-repeat: no-repeat;
            background-size: cover;
+           background-image: repeating-linear-gradient(red, blue 25%, purple 20%);
            }
 
            .headers {
-            width: 50%;
-            height: 5em;
-            padding: 0% 0% 0% 0%;
+            width: 70%;
+            padding: 0% 20% 0% 5%;
             color: green;
             font-weight:900;
-            background-repeat: no-repeat;
-            background-size: 20%;
-            background-position: 10% 10%;
-            background-size: cover;
+            font-size: 1.5em;
             }
+
+            #headerlogo {
+              clear: both;
+
+             width: 70%;
+             height: 6em;
+
+
+             }
 
                 .aboutheader {
                   width: 100%;
@@ -440,7 +455,7 @@
                   background-image: url(../images/cart-icon.svg);
                   background-repeat: no-repeat;
                   background-size: 2%;
-                  background-position: 87% 10%;
+                  background-position: 87% 0%;
                  }
 
                  h2 {
@@ -477,13 +492,15 @@
             width: 100%;
             height: 20em;
             object-fit: cover;
+            background-position: center top;
           }
 
           .indexblogpic{
             clear: both;
             width: 100%;
-            height: 7em;
+            height: 9em;
             object-fit: cover;
+            background-position: center center;
           }
 
           #bloglink{

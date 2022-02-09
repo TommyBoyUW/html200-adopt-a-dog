@@ -2,60 +2,7 @@
   * { box-sizing: border-box; }
   * {font-family: Helvetica, sans-serif; }
 
-   .headers {
-    width: 100%;
 
-    padding: 2% 10% 2% 9%;
-    color: white;
-    font-weight:900;
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: 15% 60%;
-    }
-
-    .header {
-      width: 100%;
-      height: 30em;
-      padding: 2% 10% 2% 9%;
-      color: white;
-     background-image: url(../images/header-image.jpg);
-     background-repeat: no-repeat;
-     background-size: 100%;
-
-     }
-
-        .aboutheader {
-          width: 100%;
-          padding:0% 0% 0% 89%;
-          background-image: url(../images/cart-icon.svg);
-          background-repeat: no-repeat;
-          background-size: 3%;
-          background-position: 87% 10%;
-         }
-
-         h2 {
-           font-size: 1.2em;
-           padding: 15% 0 0% 0%;
-           color: #4CAF50;
-              font-style:oblique;
-              font-weight:200;}
-
-
-     .checkout {
-      width: 20%;
-      float: right;
-       background-color: #4CAF50;
-       border: none;
-       color: white;
-       text-align: center;
-       text-decoration: none;
-       margin: 0% 0% 0% 80%;
-       padding: 1%;
-       cursor: pointer;}
-
-       .checkoutpage {
-         padding: 1% 15%;
-       }
 
         .bannernav{
           width: 100%;
@@ -92,24 +39,17 @@
               text-align: left;
                         }
 
-                        #indexprofile {
-                          margin: 1% 1% 1% 0%;
-                          font-size: .7rem;
-                          border: 1px solid lightgrey;
-                          width: 25em;
-                          text-align: left;
 
-                                    }
 
-                                    #indexleft {
-                                      width: 75%;
-                                      float: left;
-                                    }
 
-                  .indexblog {
-                    width: 25%;
-                    float: right;
-                  }
+                                  
+                                  .indexleft {
+                                    width: 70%;
+                                    float: left;
+                                  }
+
+
+
 
 
               .profilephoto {
@@ -172,7 +112,7 @@
             }
 
             #indexportfolio{
-              padding:0 0 0 0%;
+              padding:0 0%;
               display: flex;
               flex-direction: row;
               flex-wrap: wrap;
@@ -181,11 +121,18 @@
 
             .introverb, .blogverb {
               font-size: .75em;
+              text-decoration: none;
+            }
+
+            .blogverbmore {
+              font-size: .75em;
+              color: blue;
+              text-decoration: none;
             }
 
             #indexintroverb {
               font-size: .75em;
-              margin: 0% 5%;
+              margin: 0% 1.5% 2.5% 1.5%;
             }
 
             .adopt {
@@ -207,8 +154,8 @@
 
             .more {
               background-color: lightgrey;
-              width: 30%;
-              margin: 2.5% 35% 2.5% 35%;
+              width: 50%;
+              margin: 10% 25% 10% 25%;
               padding: 2% 5%;
               border: none;
               font-weight: bold;
@@ -219,33 +166,26 @@
               cursor: pointer;
             }
 
-            .intropic{
-              max-width:90%;
-              height:20%;
+
+
+
+            .introblogtitle{
+              font-size: 1.8rem;
+              color: navy;
             }
 
-            #indexintropic{
-              width: 100%;
-              height: 50%;
-            object-fit: cover;
-
-
-            }
 
             .blogpic{
               max-width:30%;
               height:25%;
               margin: 2% 5%;
-            }
+              }
 
-            #indexblogpic{
-              width: 100%;
 
-              margin: 2% 0%;
-            }
 
             .intro {
               width: 60%;
+              padding: 0 0 0 5%;
             }
 
               .intropages {
@@ -253,7 +193,7 @@
 
             }
             .intropage{
-            margin: 5% 0 0 10%;
+            margin: 5% 1% 0 10%;
             font-family: Arial, sans-serif;
               font-size: 1.25rem;
             display: flex;
@@ -271,7 +211,7 @@
           flex-wrap: wrap;
         }
 
-        #indexblogpage{
+        .indexblogpage{
         margin: .5% 01%;
         font-family: Arial, sans-serif;
           font-size: 1.1em;
@@ -291,36 +231,278 @@
 
         @media screen and (max-width: 576px) {
 
-            .indexblog{
-              visibility: hidden;
-              display: none;
+          .header {
+            max-width: 100%;
+            height: 15em;
+            padding: 1% 10% 2% 9%;
+            color: white;
+           background-image: url(../images/header-image.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           }
+
+           .headers {
+            width: 50%;
+            height: 5em;
+            padding: 0% 0% 0% 0%;
+            color: green;
+            font-weight:900;
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 10% 10%;
+            background-size: cover;
             }
-            #bloglink{
+
+                .aboutheader {
+                  width: 100%;
+                  padding:0% 0% 0% 89%;
+                  background-image: url(../images/cart-icon.svg);
+                  background-repeat: no-repeat;
+                  background-size: 3%;
+                  background-position: 87% 10%;
+                 }
+
+                 h2 {
+                   font-size: 1em;
+                   padding: 15% 0 0% 0%;
+                   color: #4CAF50;
+                      font-style:oblique;
+                      font-weight:200;}
+
+
+             .checkout {
+              width: 20%;
+              float: right;
+               background-color: #4CAF50;
+               border: none;
+               color: white;
+               text-align: center;
+               text-decoration: none;
+               margin: 0% 0% 0% 80%;
+               padding: 1%;
+               cursor: pointer;}
+
+               .checkoutpage {
+                 padding: 1% 15%;
+               }
+
+
+
+            .blogmore {
+              background-color: lightblue;
+              width: 70%;
+              margin: 10% 15% 10% 15%;
+              padding: 2% 5%;
+              border: none;
+              font-weight: bold;
+              color: black;
+              text-align: center;
+              font-size: 1rem;
+              text-decoration: none;
+              cursor: pointer;
               visibility: visible;
-              float: left;
-              width: 50%;
-              font-size: 1.5em;
+              font-size: 2em;
+              color: black;
             }
+
+
+
+        .indexintropic {
+
+          width: 100%;
+          height: 8em;
+          object-fit: cover;
         }
 
-        @media screen and (min-width: 577px), (max-width: 991px) {
 
+        .indexblog{
+        visibility: hidden;
+        display: none;
+      }
+
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 991px) {
+
+          .header {
+            max-width: 100%;
+            height: 20em;
+            padding: 1% 10% 2% 9%;
+            color: white;
+           background-image: url(../images/header-image.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           }
+
+           .blogmore{
+           visibility: hidden;
+           display: none;
+         }
+
+
+           .headers {
+            width: 50%;
+            height: 5em;
+            padding: 0% 0% 0% 0%;
+            color: green;
+            font-weight:900;
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 10% 10%;
+            background-size: cover;
+            }
+
+                .aboutheader {
+                  width: 100%;
+                  padding:0% 0% 0% 89%;
+                  background-image: url(../images/cart-icon.svg);
+                  background-repeat: no-repeat;
+                  background-size: 3%;
+                  background-position: 87% 10%;
+                 }
+
+                 h2 {
+                   font-size: 1.2em;
+                   padding: 15% 0 0% 0%;
+                   color: #4CAF50;
+                      font-style:oblique;
+                      font-weight:200;}
+
+
+             .checkout {
+              width: 20%;
+              float: right;
+               background-color: #4CAF50;
+               border: none;
+               color: white;
+               text-align: center;
+               text-decoration: none;
+               margin: 0% 0% 0% 80%;
+               padding: 1%;
+               cursor: pointer;}
+
+               .checkoutpage {
+                 padding: 1% 15%;
+               }
+
+
+
+          .indexintropic {
+            clear: both;
+            width: 100%;
+            height: 11em;
+            object-fit: cover;
           }
-          #bloglink{
-            visibility: hidden;
-            display: none;
-        }
+
+          .indexblogpic{
+            width: 100%;
+            height: 5em;
+            object-fit: cover;
+          }
+
+
+          .indexblog {
+            margin: 1% 5% 0 0;
+            width: 20%;
+            float: right;
+          }
+
+            }
+
 
         @media screen and (min-width: 992px) {
 
+          .header {
+            max-width: 100%;
+            height: 20em;
+            padding: 1% 10% 2% 9%;
+            color: white;
+           background-image: url(../images/header-image.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           }
+
+           .headers {
+            width: 50%;
+            height: 5em;
+            padding: 0% 0% 0% 0%;
+            color: green;
+            font-weight:900;
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 10% 10%;
+            background-size: cover;
+            }
+
+                .aboutheader {
+                  width: 100%;
+                  padding:0% 0% 0% 89%;
+                  background-image: url(../images/cart-icon.svg);
+                  background-repeat: no-repeat;
+                  background-size: 2%;
+                  background-position: 87% 10%;
+                 }
+
+                 h2 {
+                   font-size: 1.2em;
+                   padding: 15% 0 0% 0%;
+                   color: #4CAF50;
+                      font-style:oblique;
+                      font-weight:200;}
+
+
+             .checkout {
+              width: 20%;
+              float: right;
+               background-color: #4CAF50;
+               border: none;
+               color: white;
+               text-align: center;
+               text-decoration: none;
+               margin: 0% 0% 0% 80%;
+               padding: 1%;
+               cursor: pointer;}
+
+               .checkoutpage {
+                 padding: 1% 15%;
+               }
+
+          .blogpics{
+            height: 16em;
+            object-fit: cover;
           }
+
+          .indexintropic {
+            clear: both;
+            width: 100%;
+            height: 20em;
+            object-fit: cover;
+          }
+
+          .indexblogpic{
+            clear: both;
+            width: 100%;
+            height: 7em;
+            object-fit: cover;
+          }
+
           #bloglink{
             visibility: hidden;
             display: none;
         }
 
+        .blogmore{
+        visibility: hidden;
+        display: none;
+      }
 
+      .indexblog {
+        margin: 1% 5% 0 0;
+        width: 20%;
+        float: right;
+      }
 
+      }
 
 
         @media print {
@@ -329,11 +511,15 @@
           }
         }
 
-
+        .introblogtitleh, #introtitleh{
+          clear: both;
+          font-size: 2em;
+          text-align: left;
+        }
 
         footer{
         clear: both;
-        background-color: #404040;
+        background-color: #003366;
         background-image: url(../images/adoptadog-logo.svg);
         background-repeat: no-repeat;
         background-size: 20%;
@@ -344,32 +530,9 @@
         padding: 10% 35% 5% 35%;
         text-align:center;
         }
-
-        #indexfooter{
-        clear: both;
-        background-color: #404040;
-        background-image: url(../images/adoptadog-logo.svg);
-        background-repeat: no-repeat;
-        background-size: 20%;
-        background-position: 50% 15%;
-        color: white;
-        font-size: .7rem;
-        width: 100%;
-        padding: 10% 35% 5% 35%;
-        text-align:center;
-        }
-
 
 
       .footernav a{
-      color: white;
-      padding: 2.5%;
-      font-size: .9em;
-      text-decoration: none;
-      }
-
-      #indexfooternav a{
-        clear: both;
       color: white;
       padding: 2.5%;
       font-size: .9em;

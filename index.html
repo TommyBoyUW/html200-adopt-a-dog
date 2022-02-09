@@ -9,13 +9,13 @@
       <script src="js/javascript.js" ></script>
   </head>
 
+
 <body>
   <header class="header">
   <p class="aboutheader">$1234.56</p>
     <a href="checkout.html" class="checkout">Checkout</a>
-    <img src = "images/adoptadog-logo.svg" class="headers">
-
-    <h2>Seattle's premiere dog adoption agency</h2>
+    <img src = "images/adoptadog-logo.svg" class="headers" alt="logo silhouette of a dog ">
+    <h2 class="headers">Seattle's premiere dog adoption agency</h2>
   </header>
   <nav class="bannernav">
     <a href="index.html" class="navclass">Home</a> /
@@ -23,10 +23,15 @@
     <a href="blog.html" class="navclass">Blog</a>
   </nav>
 
-<section class="indexsection" id="indexleft">
-<div class="intropage" >
-  <img src="images/home-intro.jpg" class="intropic" id="indexintropic" alt="Golden retriever smiling with owner giving a hug">
-  <h4 class="title">Adopt A Dog</h4>
+
+  <button onclick="window.location.href='blog.html';" class="blogmore">Blog</button>
+
+<section class="indexleft">
+<div class="intropage">
+  <div class="indexintropic">
+  <img src="images/home-intro.jpg" class="indexintropic" alt="Golden retriever smiling with owner giving a hug">
+</div>
+  <h4 class="title" id="introtitleh">Adopt A Dog</h4>
   <p class="introverb" id="indexintroverb">Iduciendisite quo magnatem iuntum quid quaest ea am,
 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
 derum recuptatur, cum volore, undipsa doloreium hillupta aut
@@ -36,13 +41,13 @@ am aut amet ant fugiatum, utem non reptat ad magnienecto
 volorent fugia nonsedi gendand itatquos as magnimpor aut
 molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 
+<br><br>
 
- <a href="blog.html" id="bloglink">Blog</a>
-
+<br><br>
 
   <div class="portfolio" id="indexportfolio">
 
-      <div class="profile" id="indexprofile">
+      <div class="profile">
       <img src="images/murphy-card.jpg" class="profilephoto" onclick="infoalert('Murphy', 'Boxer', '123.45')" alt="Murphy is bigger size dog that is gold with white around the nose">
       <h4>Murphy</h4>
       <h5>Cost to Adopt: $123.45</h5>
@@ -51,7 +56,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
     </div>
 
 
-      <div class="profile" id="indexprofile">
+      <div class="profile">
       <img src="images/poppy-card.jpg"  class="profilephoto" onclick="infoalert('Poppy', 'Shih Tzu', '123.45')"  alt="Poppy is a little Shiz Tsu that is white and grey">
       <h4>Poppy</h4>
       <h5>Cost to Adopt: $123.45</h5>
@@ -59,7 +64,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
       <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
     </div>
 
-    <div class="profile" id="indexprofile">
+    <div class="profile">
       <img src="images/jack-card.jpg"  class="profilephoto" onclick="infoalert('Jack', 'Jack Russell', '123.45')" alt="Jack is a little puppy white and brown">
       <h4>Jack</h4>
       <h5>Cost to Adopt: $123.45</h5>
@@ -68,7 +73,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
     </div>
 
 
-  <div class="profile" id="indexprofile">
+  <div class="profile">
   <img src="images/duffy-card.jpg"  class="profilephoto" onclick="infoalert('Duffy', 'Pit Bull', '123.45')" alt="Duffy is a white and brown dog appears to be a mix with pitbull">
   <h4>Duffy</h4>
   <h5>Cost to Adopt: $123.45</h5>
@@ -77,7 +82,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 </div>
 
 
-  <div class="profile" id="indexprofile">
+  <div class="profile">
   <img src="images/lucas-card.jpg"  class="profilephoto" onclick="infoalert('Lucas', 'Mix', '123.45')" alt="Lucas is a black dog perhaps a type of shepard">
   <h4>Lucas</h4>
   <h5>Cost to Adopt: $123.45</h5>
@@ -86,7 +91,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 </div>
 
 
-  <div class="profile" id="indexprofile">
+  <div class="profile">
   <img src="images/jake-card.jpg"  class="profilephoto" onclick="infoalert('Jake', 'Golden Retriever', '123.45')" alt="Jake is a white with light brown dog on the beach">
   <h4>Jake</h4>
   <h5>Cost to Adopt: $123.45</h5>
@@ -96,48 +101,45 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 
 </div>
 
-
-<button type="button" class="more">See More Dogs</button>
-  <br>
-</section>
-
-
-
 </div>
 
+
+  <button onclick="window.location.href='dogs.html';" class="more">See More Dogs</button>
+
+</section>
 
 
 <aside class="indexblog">
 
-  <h3>From Our Blog</h3>
+  <h3 id="introblogtitleh">From Our Blog</h3>
 
 
-  <div class="blogpage" id="indexblogpage">
-    <img src="images/blog-1.jpg" class="blogpic" id="indexblogpic" alt="Picture of lady and her dog looking at a cannon in the distance">
-
-    <h4 class="title">Traveling With Your Dog</h4>
+  <div class="indexblogpage">
+    <img src="images/blog-1.jpg" class="indexblogpic" alt="Picture of lady and her dog looking at a cannon in the distance">
+    <h4 class="introblogtitle">Traveling With Your Dog</h4>
     <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-    <p class="blogverb">Read more >></p>
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
   </div>
 
 
 
-  <div class="blogpage" id="indexblogpage">
-    <img src="images/blog-2.jpg" class="blogpic" id="indexblogpic" alt="4 different dogs sitting at a park with their leashes">
-
-    <h4 class="title">How To Walk Multiple Dogs</h4>
+  <div class="indexblogpage">
+    <img src="images/blog-2.jpg" class="indexblogpic" alt="4 different dogs sitting at a park with their leashes">
+    <h4 class="introblogtitle">How To Walk Multiple Dogs</h4>
     <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-    <p class="blogverb">Read more >></p>
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
   </div>
 
 
 
-  <div class="blogpage" id="indexblogpage">
-    <img src="images/blog-3.jpg" class="blogpic"id="indexblogpic" alt="Silluote of a dog and its owner in the sunset">
-    <h4 class="title">Teach Your Dog To Fetch!</h4>
+  <div class="indexblogpage">
+    <img src="images/blog-3.jpg" class="indexblogpic" alt="Silluote of a dog and its owner in the sunset">
+    <h4 class="introblogtitle">Teach Your Dog To Fetch!</h4>
     <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
-    <p class="blogverb">Read more >></p>
-
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
   </div>
 
 
@@ -146,16 +148,17 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
 </aside>
 
 
-   <footer id="indexfooter">
-      <p id="indexfooter">Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-      <br>
-     <nav class="footernav" id="indexfooternav">
-       <a href="index.html">Home</a> /
-       <a href="dogs.html">Dogs</a> /
-       <a href="blog.html">Blog</a>
-          </nav>
+
+  <footer>
+     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
      <br>
-      <p id="indexfooter" >&copy; 2018 Adoptadog, LLC  | Seattle, WA</p>
-   </footer>
+    <nav class="footernav">
+      <a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="blog.html">Blog</a>
+         </nav>
+    <br>
+     <p>&copy; 2018 Adoptadog, LLC  | Seattle, WA</p>
+  </footer>
 </body>
 </html>

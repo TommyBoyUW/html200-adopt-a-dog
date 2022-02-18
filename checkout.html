@@ -12,10 +12,11 @@
 
 
   <body>
-    <header >
+    <header class="header" id="headerlayer">
     <p class="aboutheader">$1234.56</p>
-          <button type="button" class="checkout">Checkout</button>
-          <h2>Seattle's premiere dog adoption agency</h2>
+      <a href="checkout.html" class="checkout">Checkout</a>
+      <img src = "images/adoptadog-logo.svg" class="headers" id="headerlogo" alt="logo silhouette of a dog ">
+      <h2 class="headers">Seattle's premiere dog adoption agency</h2>
     </header>
     <nav class="bannernav">
       <a href="index.html" class="navclass">Home</a> /
@@ -24,7 +25,7 @@
     </nav>
 
 <section class="checkoutpage">
-  <h4>Checkout</h4>
+  <h4 class="title">Checkout</h4>
 
 
   <form class="contactform" method="GET">
@@ -48,15 +49,17 @@
   <br><br>
 
 
+<div class="perfect3">
 <div class="statess">
-      <label class="row">City<br>
-      <input type="text" name="applicantCity" class="states">
+      <label class="row1">City<br>
+      <input type="text" class="some" name="applicantCity">
     </label>
+</div>
 
-
+<div class="statess">
         <label class="row2">State<br>
-          <select name="states" class="states">
-            <option value="">Please select</option>
+          <select name="states" class="some">
+            <option value="">-</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -110,26 +113,27 @@
             <option value="WY">Wyoming</option>
         </select>
       </label>
-
+</div>
+<div class="statess">
       <label class="states">Zip Code<br>
-      <input type="text" name="applicantZip">
+      <input type="text" class="some" name="applicantZip">
     </label>
 </div>
+</div>
 
-      <br>
 <div>
 
 
-  
+<h4 class=title>First Time Adopter?</h4>
     <input type="radio" id="yes" name="previousadopter" value="yes">
     <label for="yes">Yes</label>
     <input type="radio" id="no" name="previousadopter" value="no">
-    <label for="no">No</label><br><br>
+    <label for="no">No</label><br><br><br><br>
 
 
-<label class="row2">Pickup Location
-  <select name="pickuplocation">
-    <option value="">Please select</option>
+<label >Pickup Location <br>
+  <select name="pickuplocation" class="some">
+    <option value="">-</option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
     <option value="AZ">Arizona</option>
@@ -182,21 +186,24 @@
     <option value="WI">Wisconsin</option>
     <option value="WY">Wyoming</option>
 </select>
-</label><br><br>
-
-
+</label>
+<br><br><br><br>
 
 <div class="checkoutportfolio">
-  <div class="profilecheckout">
-    <img src="images/duffy-checkout.jpg"  class="checkoutphoto" alt="Duffy is a white and brown dog appears to be a mix with pitbull">
-    <h4>Duffy</h4>
-    <h5>Cost to Adopt: $123.45</h5>
-  </div>
+  <img src="images/lucas-checkout.jpg"  style="vertical-align:middle" class="checkoutphoto" alt="Lucas is a black dog perhaps a type of shepard">
+
+<div class="profilecheckout">
+    <h3>Lucas</h3>
+  <h5>Cost to Adopt: $123.45</h5>
+
+</div>
 
 
-  <div class="profilecheckout">
-    <img src="images/lucas-checkout.jpg"  class="checkoutphoto" alt="Lucas is a black dog perhaps a type of shepard">
-    <h4>Lucas</h4>
+
+    <img src="images/duffy-checkout.jpg" style="vertical-align:middle" class="checkoutphoto" alt="Duffy is a white and brown dog appears to be a mix with pitbull">
+<div class="profilecheckout">
+
+      <h3>Duffy</h3>
     <h5>Cost to Adopt: $123.45</h5>
   </div>
 </div>
@@ -206,6 +213,10 @@
 </div>
 </div>
 </form>
+
+<h4 class=title> Total Adoption Cost</h4>
+<h4> $1234.56</h4>
+<br>
     <input type="submit" value="Submit" class="submit">
 
 <br><br>

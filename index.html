@@ -6,13 +6,16 @@
    <title>Adopt a dog</title>
    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="js/javascript.js" ></script>
   </head>
 
+
 <body>
-  <header >
+  <header class="header" id="headerlayer">
   <p class="aboutheader">$1234.56</p>
-        <button type="button" class="checkout">Checkout</button>
-        <h2>Seattle's premiere dog adoption agency</h2>
+    <a href="checkout.html" class="checkout">Checkout</a>
+    <img src = "images/adoptadog-logo.svg" class="headers" id="headerlogo" alt="logo silhouette of a dog ">
+    <h2 class="headers">Seattle's premiere dog adoption agency</h2>
   </header>
   <nav class="bannernav">
     <a href="index.html" class="navclass">Home</a> /
@@ -20,11 +23,16 @@
     <a href="blog.html" class="navclass">Blog</a>
   </nav>
 
+
+  <button onclick="window.location.href='blog.html';" class="blogmore">Blog</button>
+
+<section class="indexleft">
 <div class="intropage">
-  <img src="images/home-intro.jpg" class="intropic" alt="Golden retriever smiling with owner giving a hug">
-<aside class="intropages">
-  <h4>Adopt A Dog</h4>
-  <p class="introverb">Iduciendisite quo magnatem iuntum quid quaest ea am,
+  <div class="indexintropic">
+  <img src="images/home-intro.jpg" class="indexintropic" alt="Golden retriever smiling with owner giving a hug">
+</div>
+  <h4 class="title" id="introtitleh">Adopt A Dog</h4>
+  <p class="introverb" id="indexintroverb">Iduciendisite quo magnatem iuntum quid quaest ea am,
 tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
 derum recuptatur, cum volore, undipsa doloreium hillupta aut
 es ut alitatuscit ommossum haritatur arum qui officae videbiti
@@ -32,97 +40,125 @@ corporeium faccull oribus es quidignis ipietus explam sus
 am aut amet ant fugiatum, utem non reptat ad magnienecto
 volorent fugia nonsedi gendand itatquos as magnimpor aut
 molor autatia ad est officimus accae et omnia cus, od qui ate</p>
-</aside>
-</div>
 
+<br><br>
 
-<section>
-  <div class="portfolio">
+<br><br>
+
+  <div class="portfolio" id="indexportfolio">
 
       <div class="profile">
-      <img src="images/murphy-card.jpg" class="profilephoto" alt="Murphy is bigger size dog that is gold with white around the nose">
+      <img src="images/murphy-card.jpg" class="profilephoto" onclick="infoalert('Murphy', 'Boxer', '123.45')" alt="Murphy is bigger size dog that is gold with white around the nose">
       <h4>Murphy</h4>
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" class="adopt">Adopt</button>
+      <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
     </div>
 
 
-    <div class="profile">
-      <img src="images/poppy-card.jpg"  class="profilephoto" alt="Poppy is a little Shiz Tsu that is white and grey">
+      <div class="profile">
+      <img src="images/poppy-card.jpg"  class="profilephoto" onclick="infoalert('Poppy', 'Shih Tzu', '123.45')"  alt="Poppy is a little Shiz Tsu that is white and grey">
       <h4>Poppy</h4>
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" class="adopt">Adopt</button>
+      <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
     </div>
 
     <div class="profile">
-      <img src="images/jack-card.jpg"  class="profilephoto" alt="Jack is a little puppy white and brown">
+      <img src="images/jack-card.jpg"  class="profilephoto" onclick="infoalert('Jack', 'Jack Russell', '123.45')" alt="Jack is a little puppy white and brown">
       <h4>Jack</h4>
       <h5>Cost to Adopt: $123.45</h5>
       <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-      <button type="button" class="adopt">Adopt</button>
+      <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
     </div>
 
 
-<div class="profile">
-  <img src="images/duffy-card.jpg"  class="profilephoto" alt="Duffy is a white and brown dog appears to be a mix with pitbull">
+  <div class="profile">
+  <img src="images/duffy-card.jpg"  class="profilephoto" onclick="infoalert('Duffy', 'Pit Bull', '123.45')" alt="Duffy is a white and brown dog appears to be a mix with pitbull">
   <h4>Duffy</h4>
   <h5>Cost to Adopt: $123.45</h5>
   <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-  <button type="button" class="adopt">Adopt</button>
+  <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
 </div>
 
 
-<div class="profile">
-  <img src="images/lucas-card.jpg"  class="profilephoto" alt="Lucas is a black dog perhaps a type of shepard">
+  <div class="profile">
+  <img src="images/lucas-card.jpg"  class="profilephoto" onclick="infoalert('Lucas', 'Mix', '123.45')" alt="Lucas is a black dog perhaps a type of shepard">
   <h4>Lucas</h4>
   <h5>Cost to Adopt: $123.45</h5>
   <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-  <button type="button" class="adopt">Adopt</button>
+  <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
 </div>
 
 
-<div class="profile">
-  <img src="images/jake-card.jpg"  class="profilephoto" alt="Jake is a white with light brown dog on the beach">
+  <div class="profile">
+  <img src="images/jake-card.jpg"  class="profilephoto" onclick="infoalert('Jake', 'Golden Retriever', '123.45')" alt="Jake is a white with light brown dog on the beach">
   <h4>Jake</h4>
   <h5>Cost to Adopt: $123.45</h5>
   <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-  <button type="button" class="adopt">Adopt</button>
-</div>
-
-
-<div class="profile">
-  <img src="images/angus-card.jpg"  class="profilephoto" alt="Angus is a medium size golden brown dog with white on chest standing in the grass">
-  <h4>Angus</h4>
-  <h5>Cost to Adopt: $123.45</h5>
-  <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-  <button type="button" class="adopt">Adopt</button>
-</div>
-
-<div class="profile">
-  <img src="images/violet-card.jpg"  class="profilephoto" alt="Violet is an adorable puppy">
-  <h4>Violet</h4>
-  <h5>Cost to Adopt: $123.45</h5>
-  <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
-  <button type="button" class="adopt">Adopt</button>
+  <button type="button" class="adopt" onclick="adder(1)" >Adopt</button>
 </div>
 
 </div>
 
-<button type="button" class="more">See More Dogs</button>
-  <br>
+</div>
+
+
+  <button onclick="window.location.href='dogs.html';" class="more">See More Dogs</button>
+
 </section>
-   <footer>
-      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-      <br>
-     <nav class="footernav">
-       <a href="index.html">Home</a> /
-       <a href="dogs.html">Dogs</a> /
-       <a href="blog.html">Blog</a>
-          </nav>
+
+
+<aside class="indexblog">
+
+  <h3 id="introblogtitleh">From Our Blog</h3>
+
+
+  <div class="indexblogpage">
+    <img src="images/blog-1.jpg" class="indexblogpic" alt="Picture of lady and her dog looking at a cannon in the distance">
+    <h4 class="introblogtitle">Traveling With Your Dog</h4>
+    <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
+  </div>
+
+
+
+  <div class="indexblogpage">
+    <img src="images/blog-2.jpg" class="indexblogpic" alt="4 different dogs sitting at a park with their leashes">
+    <h4 class="introblogtitle">How To Walk Multiple Dogs</h4>
+    <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
+  </div>
+
+
+
+  <div class="indexblogpage">
+    <img src="images/blog-3.jpg" class="indexblogpic" alt="Silluote of a dog and its owner in the sunset">
+    <h4 class="introblogtitle">Teach Your Dog To Fetch!</h4>
+    <p class="blogverb">Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+    <a href="blog.html" class="blogverbmore">Read more >></a>
+    <br><br>
+  </div>
+
+
+
+
+</aside>
+
+
+
+  <footer>
+     <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
      <br>
-      <p>&copy; 2018 Adoptadog, LLC  | Seattle, WA</p>
-   </footer>
+    <nav class="footernav">
+      <a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="blog.html">Blog</a>
+         </nav>
+    <br>
+     <p>&copy; 2018 Adoptadog, LLC  | Seattle, WA</p>
+  </footer>
 </body>
 </html>

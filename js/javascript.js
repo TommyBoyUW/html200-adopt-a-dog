@@ -13,86 +13,81 @@ alert("Total adoption fees: $" + total);
 
 function blogp() {
 
-  var div = document.createElement('div');
-  const h3 = document.createElement('h3');
-  const h4 = document.createElement('h4');
-  const img = document.createElement('img');
-  const p = document.createElement('p');
-  const aside = document.createElement('aside');
-  const body = document.querySelector('div');
+var div = document.createElement('div');
+const h3 = document.createElement('h3');
 
-body.append(h3);
+const blogInfo =[
+  {
+    name: 'Traveling With Your Dog',
+    info: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.  Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explan sus am aut amet ant fugiatum, utem non reptat.',
+    info2: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit',
+    image: 'images/blog-1.jpg'
+  },
+
+  {
+    name: 'How To Walk Multiple Dogs',
+    info: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.  Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explan sus am aut amet ant fugiatum, utem non reptat.',
+    info2: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit',
+    image: 'images/blog-2.jpg'
+  },
+
+  {
+    name: 'Teach Your Dog To Fetch',
+    info: 'Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.  Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explan sus am aut amet ant fugiatum, utem non reptat.',
+    info2: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit',
+    image: 'images/blog-3.jpg'
+  }
+];
+
+const container = document.getElementById('blogposts');
+
+h3.textContent = "Adoptadog Blog";
 h3.setAttribute('class', 'blogtitle');
-h3.innerHTML = "Adoptadog Blog";
-
-div.setAttribute('class', 'blogpage');
-body.append(div);
-
-img.setAttribute('class','blogpics');
-img.setAttribute('id', 'pic');
-div.append(img);
-
-div.append(aside);
-aside.setAttribute('class', 'intro');
-
-aside.append(h4);
-h4.setAttribute('class', 'title');
-
-aside.append(p);
-p.setAttribute('class', 'blogverb');
+  container.appendChild(h3);
 
 
-//const blogs = document.createElement('blogs');
-//blogs.append(div);
-
-//const blogs = [
-//{number: 1, picture: 'images/blog-1.jpg', title: 'Traveling With Your Dog'},
-//{number: 2, picture: 'images/blog-2.jpg', title: 'How To Walk Multiple Dogs'},
-//{number: 3, picture: 'images/blog-3.jpg', title: 'Teach Your Dog To Fetch!'}
-//];
+for(i=0; i<blogInfo.length; i++){
+  const blog = blogInfo[i];
 
 
-let pics = ['images/blog-1.jpg', 'images/blog-2.jpg', 'images/blog-3.jpg'];
-let title = ['Traveling With Your Dog', 'How To Walk Multiple Dogs', 'Teach Your Dog To Fetch!'];
+  const containers = document.createElement('blogs');
+  containers.classList.add('blogpage');
 
-let story = [];
-story[0]= "Aduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat. Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.";
+  const containers2 = document.createElement('blogs2');
+  containers2.classList.add('intro');
 
-story[1]= "Bduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.";
+  const newimage = document.createElement("img");
+  newimage.src = blog.image;
+  newimage.classList.add('blogpic');
 
-story[2]= "Cduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.";
+  const title = document.createElement('h4');
+  title.textContent = blog.name;
+  title.classList.add( 'introblogtitle' );
 
-//const myCollection = document.getElementsByTagName("h4");
+  const paragraph = document.createElement('p');
+  paragraph.textContent = blog.info;
+  paragraph.classList.add('blogverb');
 
-//var img = document.createElement('img');
-//var spans=[];
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = blog.info2;
+  paragraph2.classList.add( 'blogverb');
 
-for (let i=-0; i < 1; i += 1) {
-//img.setAttribute("src", blogs.picture);
-// document.createElement(blogs[i]);
-img.src += pics[i];
-h4.textContent += title[i];
-p.textContent += story[i];
 
+container.appendChild(containers);
+
+containers.appendChild(newimage);
+
+containers.appendChild(containers2);
+containers2.appendChild(title);
+containers2.appendChild(paragraph);
+containers2.appendChild(paragraph2);
 
  }
 
 }
 
+function checkoutpage() {
 
-
-//function checkoutpage() {
-
-  //const submitButton = document.createElement('button');
-  //submitButton.setAttribute('type', 'submit');
-  //submitButton.textContent = 'Submit';
-  //form.appendChild(submitButton);
-  //form.addEventListener('submit', function(e) {
-   //alert("Thank you. The form information has been received");
-  //  });
-//}
-
-function validateForm() {
   let x = document.forms["myForm"].value;
 
   if (x == "") {
@@ -100,8 +95,21 @@ function validateForm() {
     return false;
   }
   else {
-    alert("Thank you. The form information has been received");
 
-      console.log();
-}
-}
+    document.querySelector('form.myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let x = document.querySelector('form.myForm').elements;
+    console.log("Name: ", x['name'].value);
+    console.log("Email: ", x['applicantEmail'].value);
+    console.log("Address: ", x['applicantStreet'].value);
+    console.log("City: ", x['applicantCity'].value);
+    console.log("State: ", x['states'].value);
+    console.log("Zip Code: ", x['applicantZip'].value);
+    console.log("First Time Adopter Y/N: ", x['previousadopter'].value);
+    console.log("Pickup Location: ", x['pickuplocation'].value);
+
+      alert("Thank you. The form information has been received");
+  });
+
+    }
+  }

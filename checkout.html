@@ -31,23 +31,24 @@
 
 
 
-      <form name="myForm" onsubmit="return validateForm()" method="post" id="text" class="contactform" method="GET">
+      <form name="myForm" class="myForm" id='text' method="post" >
         <div class="allformat">
           <div class="leftform">
 
     <label class="row1">Name<br>
-    <input type="text" name="name" id="text1[][name]" value="" required>
+    <input type="text" name="name" id="name" value="" required>
+
   </label>
   <br><br>
 
 
     <label class="row1">Email Address<br>
-    <input type="email" name="applicantEmail" >
+    <input type="email" name="applicantEmail" required>
   </label>
   <br><br>
 
     <label class="street">Street Address<br>
-    <input type="tel" name="applicantTel" >
+    <input type="text" name="applicantStreet" required>
   </label>
   <br><br>
 
@@ -55,13 +56,13 @@
 <div class="perfect3">
 <div class="statess">
       <label class="row1">City<br>
-      <input type="text" class="some" name="applicantCity" >
+      <input type="text" class="some" name="applicantCity" required>
     </label>
 </div>
 
 <div class="statess">
         <label class="row2">State<br>
-          <select name="states" class="some" >
+          <select name="states" class="some" required>
             <option value="">-</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -119,7 +120,7 @@
 </div>
 <div class="statess">
       <label class="states">Zip Code<br>
-      <input type="text" class="some" name="applicantZip" >
+      <input type="text" class="some" name="applicantZip" required>
     </label>
 </div>
 </div>
@@ -128,14 +129,14 @@
 
 
 <h4 class=title>First Time Adopter?</h4>
-    <input type="radio" id="yes" name="previousadopter" value="yes" >
+    <input type="radio" id="yes" name="previousadopter" value="yes" required >
     <label for="yes">Yes</label>
-    <input type="radio" id="no" name="previousadopter" value="no" >
+    <input type="radio" id="no" name="previousadopter" value="no" required>
     <label for="no">No</label><br><br><br><br>
 
 
 <label >Pickup Location <br>
-  <select name="pickuplocation" class="some" >
+  <select name="pickuplocation" class="some" required>
     <option value="">-</option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
@@ -221,7 +222,10 @@
 <h4> $1234.56</h4>
 <br>
 
-    <input type="submit" value="Submit" class="submit" onclick="validateform()">
+
+
+    <input type="submit" id='button' value="Submit" class="submit" >
+
 </form>
 <br><br>
 

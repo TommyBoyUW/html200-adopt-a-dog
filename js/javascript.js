@@ -4,11 +4,20 @@ function infoalert(name, breed, fee) {
 }
 
 let a = 0;
+let total = 0;
+let carttotal = 0;
+
 function adder(x) {
   a= a+x;
  total = a*123.45;
+
+ carttotal = ("$ " + total);
+ $(".aboutheader").text(carttotal);
+
 alert("Total adoption fees: $" + total);
 }
+
+
 
 
 function blogp() {
@@ -97,7 +106,9 @@ function checkoutpage() {
   else {
 
     document.querySelector('form.myForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+  e.preventDefault();
+
+
     let x = document.querySelector('form.myForm').elements;
     console.log("Name: ", x['name'].value);
     console.log("Email: ", x['applicantEmail'].value);
@@ -113,3 +124,17 @@ function checkoutpage() {
 
     }
   }
+
+$(function(){
+
+$(".profilephoto").mouseenter(function() {
+    $(this).css("cursor","pointer");
+    $(this).animate({width: "125%", height: "100%", opacity: "0.3"}, 'slow');
+  });
+
+
+
+$('.profilephoto').mouseleave(function() {
+    $(this).animate({width: "100%", height: "45%", opacity: "1"}, 'slow');
+    });
+})
